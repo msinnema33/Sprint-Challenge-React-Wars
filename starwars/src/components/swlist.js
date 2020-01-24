@@ -34,7 +34,7 @@ export default function SWList() {
       <Container>
         <Row>
         {chars.map(char => {
-            return <SWCard key={char.index}
+            return <SWCard key={char.name}
             name = {char.name} 
             height = {char.height}
             mass = {char.mass}
