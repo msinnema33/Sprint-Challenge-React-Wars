@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import SWList from './components/swlist';
+import MoreChar from './components/MoreChar';
+
 
 
 const App = () => {
@@ -15,6 +17,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <SWList />
+      <MoreChar className='Pages' />
     </div>
   );
 }

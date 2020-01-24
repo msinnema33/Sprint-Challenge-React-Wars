@@ -6,8 +6,8 @@ import { Container, Row } from "reactstrap";
 export default function SWList() {
     //https://swapi.co/api/people/
     const [chars, setChars] = useState([]);
-    const [next, getNext] = useState([]);
-    const [prev, getPrev] = useState([]);
+    const [next, setNext] = useState([]);
+    const [prev, setPrev] = useState([]);
       
     useEffect(() => {
       axios
@@ -15,12 +15,15 @@ export default function SWList() {
         .then(response => {
          const chars = response.data.results;
          const next = response.data.next;
-        // const prev = response.data.previous;
+         const prev = response.data.previous;
          console.log(next);
-         //console.log(previous);
-         console.log(response);
-          console.log(chars);
+         console.log(prev);
+         //console.log(response);
+         console.log(chars);
           setChars(chars);
+          setNext(next);
+          setPrev(prev);
+          
         })
         .catch(error => {
           console.log("Sorry no data", error);
@@ -34,7 +37,7 @@ export default function SWList() {
             return <SWCard key={char.index}
             name = {char.name} 
             height = {char.height}
-            weight = {char.mass}
+            mass = {char.mass}
             hair_color = {char.hair_color}
             eye_color = {char.eye_color}
             birth_year = {char.birth_year}
