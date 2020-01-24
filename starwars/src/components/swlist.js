@@ -6,12 +6,19 @@ import { Container, Row } from "reactstrap";
 export default function SWList() {
     //https://swapi.co/api/people/
     const [chars, setChars] = useState([]);
-  
+    const [next, getNext] = useState([]);
+    const [prev, getPrev] = useState([]);
+      
     useEffect(() => {
       axios
         .get(`https://swapi.co/api/people/`)
         .then(response => {
          const chars = response.data.results;
+         const next = response.data.next;
+        // const prev = response.data.previous;
+         console.log(next);
+         //console.log(previous);
+         console.log(response);
           console.log(chars);
           setChars(chars);
         })
