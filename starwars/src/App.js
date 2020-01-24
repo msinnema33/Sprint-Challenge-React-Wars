@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import SWList from './components/swlist';
 import MoreChar from './components/MoreChar';
+import SearchForm from './components/SearchForm';
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <SearchForm />
       <SWList />
       <MoreChar className='Pages' />
     </div>
