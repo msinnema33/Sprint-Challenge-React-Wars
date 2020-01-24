@@ -74,8 +74,8 @@ Follow these steps for completing your project.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request.
 - [ ] TL then will count the HW as done by merging the branch back into master.
 
 
@@ -92,7 +92,7 @@ Your finished project must include all of the following requirements:
 
 #### Required best practices:
 
-- x] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [x] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
 - [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
 - [x] Consistent quotation usage.
 - [x] Spell-check.
